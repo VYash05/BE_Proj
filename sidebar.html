@@ -1,0 +1,36 @@
+<div class="col-md-4">
+          <div class="content-section">
+            <h3>Our Sidebar</h3>
+            <p class='text-muted'>You can put any information here you'd like.
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-light">Latest Posts</li>
+                <li class="list-group-item list-group-item-light">Announcements</li>
+                <li class="list-group-item list-group-item-light">Calendars</li>
+                <li class="list-group-item list-group-item-light">etc</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airlines</title>
+</head>
+
+<body>
+<h1>Airline Companies</h1>
+
+<img src="{{ user_image1 }}" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+<area shape="rect" coords="44,55,300,450" href="https://www.united.com/en/gb">
+</map>
+
+</body>
+</html>
+
+
+<img src="{{url_for('static', filename='airlines.png')}}" /><br>

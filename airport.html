@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Airport with Maximum Air Traffic</h1><br>
+	 
+	 <img src="{{url_for('static', filename='Busiest Airport.jpg')}}" /><br>
+	 <div style="background-color:white;padding:20px;">
+	 <p>- It can be observed that the airport of 'Atlanta' city had the highest number of departing flights(29,512) in January 2015.</p>
+	 </div><br>
+	 
+	 <img src="{{url_for('static', filename='busiest airport - 1.jpg')}}" /><br>
+	 <div style="background-color:white;padding:20px;">
+	 <p>- From the above graph, it can be deduced that the 'Atlanta City Airport' contains the highest no of incoming flights(29,492).</p>
+	 </div><br>
+	 
+	 <h2>'Atlanta City Airport' can be considered as the busiest airport with maximum air traffic as of January 2015.</h2>
+	 
+{% endblock content %}

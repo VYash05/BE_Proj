@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Comparison of Airlines</h1><br>
+	 
+	 <h2>1. Departure Delay</h2><br>
+	 <img src="{{url_for('static', filename='Comparison of Airlines.png')}}" /><br>
+	 <div style="background-color:white;padding:20px;">
+     <p>- The Pie Chart suggests that the passengers must board the flights of 'Hawaiian Airlines(HA)' as it has 0 % departure delay. But the problem with this airline is that it has very less amount of flights(1 % of total flights).</p>
+     <p>- For more amount of available flights with lesser delay, 'Delta Airlines(DL)' is the best option.</p>
+     <p>- From the second graph, 'American Airlines(AA)' has a lot of data points outside the 8h20m mark which means that most of its flights have been delayed for more than 8 hours. Hence, the flights of 'American Airlines' should be avoided to save time.</p>
+	 </div><br>
+	 
+	 <h2>2. Time Analysis</h2><br>
+	 <img src="{{url_for('static', filename='Time Analysis.png')}}" /><br>
+	 <div style="background-color:white;padding:20px;">
+     <p>- This figure gives a count of the delays of less than 5 minutes, those in the range 5 < t < 45 min and finally, the delays greater than 45 minutes.</p>
+     <p>- We can observe the fact that a majority of flights take off on time. However, we see that occasionally, we can face really large delays that can reach a few ten hours !</p>
+	 <p>- Hence, we see that independent of the airline, delays greater than 45 minutes only account for a few percent. However, the proportion of delays in these groups depends on the airline: as an example, in case of 'Atlantic Southeast Airlines', the delays greater than 45 minutes are 50 % of the delays in the range 5 < t < 45 min. Things are better for 'SouthWest Airlines' since delays greater than 45 minutes are 3 times less frequent than delays in the range 5 < t < 45 min.
+     </p>
+	 </div><br>
+	 
+	 <h2>3. Conclusion</h2><br>
+	 <img src="{{url_for('static', filename='comparison.png')}}" /><br>
+     <div style="background-color:white;padding:20px;">
+     <p>- The left panel of this figure gives an overview of the a and b coefficients of the 14 airlines showing that 'Hawaiian Airlines' and 'Delta Airlines' occupy the first two places.</p>
+     <p> - The right panel zooms on 12 other airlines. We can see that 'Southwest Airlines', which represent 22% of the total number of flights is well ranked and occupy the third position.</p>
+	 <p>- According to this ranking, 'SkyWest Airlines' is the worst carrier.</p>
+	 </div>
+	 
+{% endblock content %}
+
+ 
+ 
+ 
+ 
+  
+ 
+ 

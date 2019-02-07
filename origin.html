@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Impact of Origin Airport</h1><br>
+	 <img src="{{url_for('static', filename='Statistics of Origin Airports.png')}}" /><br>
+	 <div style="background-color:white;padding:20px;">
+	 <p>- If we consider the right panel, it will be seen that the column associated with 'Skywest Airlines' mostly reports large delays, while the column associated with 'Delta Airlines' depicts minimum delays.</p>
+	 <p>- If we now look at the airports of origin, we will see that some airports favour late departures: e.g. Chicago & Philadelphia.</p>
+	 <p>- Conversely, other airports which are known for on-time departures are Seattle and Charleston.</p>
+	 </div>
+	 
+{% endblock content %}
